@@ -1,7 +1,5 @@
 import { Button } from "@/components/m3e/button"
-import { chipVariants } from "@/components/m3e/chip"
 import { Icon } from "@/components/m3e/icon"
-import { cn } from "@/lib/m3e/cn"
 import { ApprovalBadge } from "./ApprovalBadge"
 import { Reveal } from "./Reveal"
 import { HERO, BRAND, TELEGRAM_URL } from "@/config"
@@ -40,18 +38,7 @@ export function Hero() {
         </p>
       </Reveal>
 
-      <Reveal auto style={{ animationDelay: "140ms" }} className="mt-6">
-        {/* an assist-chip-shaped static label — it opens nothing by itself,
-            the primary CTA below is the action */}
-        <span className={cn(chipVariants({ variant: "flat" }), "cursor-default")}>
-          <span data-slot="chip-leading" className="inline-flex">
-            <Icon name="verified" size={18} />
-          </span>
-          {HERO.chip}
-        </span>
-      </Reveal>
-
-      <Reveal auto style={{ animationDelay: "210ms" }} className="mt-10">
+      <Reveal auto style={{ animationDelay: "210ms" }} className="mt-8">
         <p className="font-heading text-title-large font-semibold text-tertiary">
           {BRAND.slogan}
         </p>

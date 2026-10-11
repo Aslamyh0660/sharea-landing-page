@@ -46,6 +46,31 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* ---------- SHAREA approval badge: semantic success colors ---------- */
+:root {
+  --sharea-success-green: #2e7d32;
+  --sharea-success-green-light: #a5d6a7;
+  --sharea-success-green-dark: #1b5e20;
+  --sharea-success-container: #143a2a;
+  --sharea-success-on-container: #d9f2dd;
+  /* Slightly lifted for clear separation from both the container and navy surface. */
+  --sharea-success-outline: #4f9060;
+}
+
+.approval-badge {
+  background-color: var(--sharea-success-container);
+  border-color: var(--sharea-success-outline);
+  color: var(--sharea-success-on-container);
+}
+
+.approval-badge__check {
+  color: var(--sharea-success-green-light);
+}
+
+.approval-badge__divider {
+  background-color: var(--sharea-success-outline);
+}
+
 /* Arabic runs a little taller: give running text room (headings keep the M3
    scale line-heights, which already suit Kufi) */
 .font-body-ar {
