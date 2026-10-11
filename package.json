@@ -9,6 +9,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build && vite build --ssr src/entry-server.tsx --outDir dist-ssr --emptyOutDir && node scripts/ssg.mjs && node scripts/preload-fonts.mjs --base=/",
     "build:sandbox": "tsc -b && vite build --base=/site/ && vite build --ssr src/entry-server.tsx --outDir dist-ssr --emptyOutDir && node scripts/ssg.mjs && node scripts/preload-fonts.mjs --base=/site/",
+    "build:pages": "tsc -b && vite build --base=/sharea-landing-page/ && vite build --ssr src/entry-server.tsx --outDir dist-ssr --emptyOutDir && node scripts/ssg.mjs && node scripts/preload-fonts.mjs --base=/sharea-landing-page/",
     "preview": "vite preview",
     "gen:tokens": "bun scripts/gen-tokens.mjs",
     "verify:theme": "bun scripts/verify-theme.ts",

@@ -149,6 +149,13 @@ Every PNG is decode-verified with OpenCV before the script exits.
 
 ## Deploy / redeploy
 
+**GitHub Pages (static deployment):** the workflow in
+`.github/workflows/pages.yml` builds this repository and publishes `dist/` at
+`https://aslamyh0660.github.io/sharea-landing-page/`. The Pages build uses the
+repository subpath as Vite's base URL. GitHub Pages does not run the Cloudflare
+Pages Function, so the like counter remains unavailable there until a backend
+is configured; the page reports that state rather than inventing a count.
+
 **Cloudflare Pages (recommended — the like function ships with the repo):**
 
 - Git-connected: push the repo, "Create a project" in the Pages dashboard,
