@@ -171,6 +171,7 @@ export function StickyCtaBar() {
           <Icon name="send" size={20} className="rtl:scale-x-[-1]" />
           {HERO.cta}
         </Button>
+        {/* Temporarily disabled like shortcut; kept here for rollback.
         <a
           href="#like"
           aria-label="أضِف إعجاباً بصفحة شارع"
@@ -178,6 +179,7 @@ export function StickyCtaBar() {
         >
           <Icon name="favorite" size={22} />
         </a>
+        */}
         <a
           href="#share-row"
           aria-label="خيارات المشاركة ونسخ الرابط"

@@ -142,11 +142,11 @@ body {
   }
 }
 
-/* ---------- like toggle: selected state wears the brand gold ---------- */
-
+/* ---------- temporarily disabled like-toggle style; retained for rollback ----------
 .like-toggle[data-pressed] {
   color: var(--md-sys-color-tertiary);
 }
+*/
 
 /* ---------- sticky bottom CTA bar (mobile) ---------- */
 

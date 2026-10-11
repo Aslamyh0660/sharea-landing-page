@@ -46,7 +46,8 @@ export const SECTION_TITLES = {
   services: "خدمات شارع",
   servicesIntro: "سبع خدمات تحتاجها أثناء زيارتك لقم، كلها في بوت واحد",
   trust: "لماذا شارع؟",
-  like: "هل أعجبتك صفحة شارع؟",
+  // Temporarily disabled with the like section; kept for rollback:
+  // like: "هل أعجبتك صفحة شارع؟",
   cta: "ابدأ الآن مع شارع",
   ctaIntro: "افتح البوت واطلب ما تحتاجه مباشرة، أو انضم إلى مجموعة الواتساب",
 }
@@ -115,11 +116,12 @@ export const FOOTER = {
 
 /** localStorage keys */
 export const STORAGE = {
-  liked: "sharea:liked",
+  // Temporarily disabled with the like section; kept for rollback:
+  // liked: "sharea:liked",
 }
 
-/** Like counter endpoint (same contract locally and in production). */
-export const LIKES_ENDPOINT = "/api/likes"
+// Temporarily disabled with the like section; kept for rollback:
+// export const LIKES_ENDPOINT = "/api/likes"
 
 // The service/trust icons are referenced dynamically (icon={service.icon}),
 // so list them for scripts/icons.mjs (gen:icons):
