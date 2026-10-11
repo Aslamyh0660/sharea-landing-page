@@ -75,7 +75,7 @@ export const SERVICES: Service[] = [
   },
   {
     icon: "currency_exchange",
-    title: "الصرافة",
+    title: "تصريف العملات",
     description: "خدمات تحويل العملات داخل قم بيسر وسهولة.",
   },
   {
