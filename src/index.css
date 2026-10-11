@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/roboto-flex";
+@import "@fontsource-variable/jetbrains-mono";
+
+/* Sharea fonts — self-hosted (OFL), font-display: swap (fontsource default).
+   Only the weights the page actually uses (audited in the browser); full
+   unicode-range subsets cover Arabic shaping, lam-alef, diacritics and Latin. */
+@import "@fontsource/noto-kufi-arabic/400.css";
+@import "@fontsource/noto-kufi-arabic/600.css";
+@import "@fontsource/ibm-plex-sans-arabic/400.css";
+@import "@fontsource/ibm-plex-sans-arabic/500.css";
+@import "@fontsource/ibm-plex-sans-arabic/600.css";
+@import "@fontsource/cormorant-garamond/600.css";
+
+/* shadcn M3E design tokens + utilities (state layers, focus ring, motion…) */
+@import "./lib/m3e/m3e.css";
+
+/* Sharea frozen theme (navy seed, gold tertiary) — after m3e.css so it
+   overrides the baseline scheme. Regenerate with `npm run gen:tokens`. */
+@import "./lib/m3e/theme-sharea.css";
+
+/* ---------- Sharea typography (Arabic-first) ---------- */
+
+@theme {
+  --font-sans:
+    "IBM Plex Sans Arabic", "Roboto Flex Variable", "Noto Sans Arabic",
+    system-ui, sans-serif;
+  --font-heading:
+    "Noto Kufi Arabic", "IBM Plex Sans Arabic", "Noto Sans Arabic", system-ui,
+    sans-serif;
+  /* the Latin wordmark only ("SHAREA") */
+  --font-wordmark: "Cormorant Garamond", serif;
+}
+
+html {
+  background-color: var(--md-sys-color-surface);
+}
+
+body {
+  background-color: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Arabic runs a little taller: give running text room (headings keep the M3
+   scale line-heights, which already suit Kufi) */
+.font-body-ar {
+  line-height: 1.85;
+}
+
+/* ---------- reveal on first view (the page's one scroll effect) ----------
+   Default (no JS): content is visible — nothing ever waits for an animation.
+   With JS and no reduced-motion preference: a short fade/slide, once.
+   `.reveal-auto` (above the fold) is a pure CSS entrance that runs on load. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .reveal {
+    opacity: 0;
+    translate: 0 14px;
+    transition:
+      opacity 520ms var(--md-sys-motion-easing-emphasized-decelerate),
+      translate 520ms var(--md-sys-motion-easing-emphasized-decelerate);
+  }
+  .js .reveal[data-revealed="true"] {
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  .reveal-auto {
+    animation: reveal-rise 560ms var(--md-sys-motion-easing-emphasized-decelerate) backwards;
+  }
+
+  @keyframes reveal-rise {
+    from {
+      opacity: 0;
+      translate: 0 14px;
+    }
+  }
+}
+
+/* ---------- services ribbon (the page's one ambient motion) ---------- */
+
+.ribbon {
+  overflow: hidden;
+  /* soft fading edges */
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 7%,
+    black 93%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 7%,
+    black 93%,
+    transparent
+  );
+}
+
+.ribbon-track {
+  display: flex;
+  width: max-content;
+  gap: var(--ribbon-gap, 0.75rem);
+  animation: ribbon-scroll 46s linear infinite;
+  animation-delay: 1.2s;
+}
+
+/* RTL page: the row drifts rightward (opposite the reading start), seamless
+   over two copies of the content */
+@keyframes ribbon-scroll {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 50%;
+  }
+}
+
+/* pause on hover and while touched */
+.ribbon:hover .ribbon-track,
+.ribbon:active .ribbon-track,
+.ribbon:focus-within .ribbon-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ribbon-track {
+    animation: none;
+  }
+  /* static fallback: let the row be scrolled by hand instead */
+  .ribbon {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .ribbon::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ---------- like toggle: selected state wears the brand gold ---------- */
+
+.like-toggle[data-pressed] {
+  color: var(--md-sys-color-tertiary);
+}
+
+/* ---------- sticky bottom CTA bar (mobile) ---------- */
+
+.sticky-cta {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+@supports (height: 1dvh) {
+  .page-min-h {
+    min-height: 100dvh;
+  }
+}

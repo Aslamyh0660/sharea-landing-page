@@ -1,0 +1,23 @@
+{
+  "$schema": "https://shadcn-m3e.crystaworld.dev/schema.json",
+  "style": "m3e",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true
+  },
+  "iconLibrary": "@iconify/react",
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/m3e/cn",
+    "ui": "@/components/m3e",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "registries": {
+    "@m3e": "https://shadcn-m3e.crystaworld.dev/r/{name}.json"
+  }
+}

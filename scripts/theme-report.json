@@ -1,0 +1,545 @@
+{
+  "generatedAt": "2026-10-11T07:48:41.367Z",
+  "options": {
+    "source": {
+      "primary": "#0F2A4A",
+      "tertiary": "#D4A24C",
+      "neutral": "#0F2A4A",
+      "neutralChroma": 16,
+      "neutralVariantChroma": 20
+    },
+    "variant": "image",
+    "contrast": "standard",
+    "spec": "2021",
+    "overrides": {
+      "dark": {
+        "tertiary": "#ffd189",
+        "on-surface": "#F5EEDC"
+      }
+    }
+  },
+  "hct": {
+    "navy": {
+      "hue": 259.1,
+      "chroma": 28,
+      "tone": 16.8
+    },
+    "gold": {
+      "hue": 78.9,
+      "chroma": 39,
+      "tone": 69.7
+    }
+  },
+  "brandMapping": [
+    {
+      "brand": "Royal / midnight navy",
+      "hex": "#0F2A4A",
+      "role": "seed → primary palette; drives primary / secondary / neutrals",
+      "palette": "primary",
+      "tone": 17,
+      "generated": "(palette source)"
+    },
+    {
+      "brand": "Secondary navy",
+      "hex": "#16375F",
+      "role": "covered by the primary palette (upper tones)",
+      "palette": "primary",
+      "tone": 22,
+      "generated": "#224876"
+    },
+    {
+      "brand": "Deep background navy",
+      "hex": "#0A1C33",
+      "role": "surface (dark) — navy-hued neutral, tone 6",
+      "palette": "neutral (chroma 16)",
+      "tone": 12,
+      "generated": "#091423"
+    },
+    {
+      "brand": "Main gold",
+      "hex": "#D4A24C",
+      "role": "seed of the tertiary palette (its tone 70 ≈ brand gold)",
+      "palette": "tertiary",
+      "tone": 70,
+      "generated": "#d5a34d"
+    },
+    {
+      "brand": "Light gold (signature)",
+      "hex": "#F3D48A",
+      "role": "tertiary (dark) — pinned to gold palette tone 86",
+      "palette": "tertiary",
+      "tone": 86,
+      "generated": "#ffd189"
+    },
+    {
+      "brand": "Deep gold",
+      "hex": "#A87824",
+      "role": "on-tertiary (dark) — gold palette low tone",
+      "palette": "tertiary",
+      "tone": 50,
+      "generated": "#432c00"
+    },
+    {
+      "brand": "Warm off-white",
+      "hex": "#F5EEDC",
+      "role": "on-surface (dark) — pinned to the brand token",
+      "palette": "neutral",
+      "tone": 100,
+      "generated": "#F5EEDC"
+    }
+  ],
+  "contrast": [
+    {
+      "fg": "on-surface",
+      "bg": "surface",
+      "fgHex": "#F5EEDC",
+      "bgHex": "#091423",
+      "ratio": 15.97,
+      "grade": "AAA",
+      "use": "body text on page background (dark)"
+    },
+    {
+      "fg": "on-surface",
+      "bg": "surface-container-low",
+      "fgHex": "#F5EEDC",
+      "bgHex": "#111c2b",
+      "ratio": 14.82,
+      "grade": "AAA",
+      "use": "cards (elevated variant)"
+    },
+    {
+      "fg": "on-surface",
+      "bg": "surface-container-highest",
+      "fgHex": "#F5EEDC",
+      "bgHex": "#2b3545",
+      "ratio": 10.69,
+      "grade": "AAA",
+      "use": "cards (filled variant)"
+    },
+    {
+      "fg": "on-surface-variant",
+      "bg": "surface",
+      "fgHex": "#b8c7e2",
+      "bgHex": "#091423",
+      "ratio": 10.83,
+      "grade": "AAA",
+      "use": "secondary text on background"
+    },
+    {
+      "fg": "primary",
+      "bg": "surface",
+      "fgHex": "#a5c8ff",
+      "bgHex": "#091423",
+      "ratio": 10.83,
+      "grade": "AAA",
+      "use": "primary-colored text/icons on background"
+    },
+    {
+      "fg": "on-primary",
+      "bg": "primary",
+      "fgHex": "#00315e",
+      "bgHex": "#a5c8ff",
+      "ratio": 7.69,
+      "grade": "AAA",
+      "use": "filled primary button"
+    },
+    {
+      "fg": "on-tertiary",
+      "bg": "tertiary",
+      "fgHex": "#432c00",
+      "bgHex": "#ffd189",
+      "ratio": 9.21,
+      "grade": "AAA",
+      "use": "gold CTA button (hero / sticky bar)"
+    },
+    {
+      "fg": "on-tertiary-container",
+      "bg": "tertiary-container",
+      "fgHex": "#ffdeac",
+      "bgHex": "#604100",
+      "ratio": 7.23,
+      "grade": "AAA",
+      "use": "tertiary container chips"
+    },
+    {
+      "fg": "on-primary-container",
+      "bg": "primary-container",
+      "fgHex": "#d4e3ff",
+      "bgHex": "#224876",
+      "ratio": 7.19,
+      "grade": "AAA",
+      "use": "primary container surfaces"
+    },
+    {
+      "fg": "inverse-on-surface",
+      "bg": "inverse-surface",
+      "fgHex": "#273141",
+      "bgHex": "#d8e3f8",
+      "ratio": 10.15,
+      "grade": "AAA",
+      "use": "snackbar (toast)"
+    },
+    {
+      "fg": "outline",
+      "bg": "surface",
+      "fgHex": "#8391ab",
+      "bgHex": "#091423",
+      "ratio": 5.81,
+      "grade": "AA",
+      "use": "outlines / input borders"
+    },
+    {
+      "fg": "outline-variant",
+      "bg": "surface",
+      "fgHex": "#39475e",
+      "bgHex": "#091423",
+      "ratio": 1.97,
+      "grade": "decorative",
+      "use": "card borders, separators (decorative only — surfaces differ by container tones; WCAG 1.4.11 non-text contrast does not apply to purely decorative strokes)"
+    }
+  ],
+  "darkRoles": {
+    "background": "#091423",
+    "on-background": "#d8e3f8",
+    "surface": "#091423",
+    "surface-dim": "#091423",
+    "surface-bright": "#2f3a4a",
+    "surface-container-lowest": "#040e1d",
+    "surface-container-low": "#111c2b",
+    "surface-container": "#16202f",
+    "surface-container-high": "#202a3a",
+    "surface-container-highest": "#2b3545",
+    "on-surface": "#F5EEDC",
+    "on-surface-variant": "#b8c7e2",
+    "outline": "#8391ab",
+    "outline-variant": "#39475e",
+    "inverse-surface": "#d8e3f8",
+    "inverse-on-surface": "#273141",
+    "primary": "#a5c8ff",
+    "primary-dim": "#a5c8ff",
+    "on-primary": "#00315e",
+    "primary-container": "#224876",
+    "on-primary-container": "#d4e3ff",
+    "primary-fixed": "#d4e3ff",
+    "primary-fixed-dim": "#a5c8ff",
+    "on-primary-fixed": "#001c3a",
+    "on-primary-fixed-variant": "#224876",
+    "inverse-primary": "#3c6090",
+    "secondary": "#bcc7dc",
+    "secondary-dim": "#d0daf0",
+    "on-secondary": "#273141",
+    "secondary-container": "#3d4758",
+    "on-secondary-container": "#d8e3f8",
+    "secondary-fixed": "#d8e3f8",
+    "secondary-fixed-dim": "#bcc7dc",
+    "on-secondary-fixed": "#111c2b",
+    "on-secondary-fixed-variant": "#3d4758",
+    "tertiary": "#ffd189",
+    "tertiary-dim": "#f0bb62",
+    "on-tertiary": "#432c00",
+    "tertiary-container": "#604100",
+    "on-tertiary-container": "#ffdeac",
+    "tertiary-fixed": "#ffdeac",
+    "tertiary-fixed-dim": "#f3be65",
+    "on-tertiary-fixed": "#281900",
+    "on-tertiary-fixed-variant": "#604100",
+    "error": "#ffb4ab",
+    "error-dim": "#ff554a",
+    "on-error": "#690005",
+    "error-container": "#93000a",
+    "on-error-container": "#ffdad6",
+    "surface-variant": "#39475e",
+    "surface-tint": "#a5c8ff",
+    "shadow": "#000000",
+    "scrim": "#000000"
+  },
+  "lightRoles": {
+    "background": "#f9f9ff",
+    "on-background": "#111c2b",
+    "surface": "#f9f9ff",
+    "surface-dim": "#d0daf0",
+    "surface-bright": "#f9f9ff",
+    "surface-container-lowest": "#ffffff",
+    "surface-container-low": "#f0f3ff",
+    "surface-container": "#e6eeff",
+    "surface-container-high": "#dee9fe",
+    "surface-container-highest": "#d8e3f8",
+    "on-surface": "#111c2b",
+    "on-surface-variant": "#39475e",
+    "outline": "#697890",
+    "outline-variant": "#b8c7e2",
+    "inverse-surface": "#273141",
+    "inverse-on-surface": "#ebf1ff",
+    "primary": "#3c6090",
+    "primary-dim": "#2f5383",
+    "on-primary": "#ffffff",
+    "primary-container": "#d4e3ff",
+    "on-primary-container": "#224876",
+    "primary-fixed": "#d4e3ff",
+    "primary-fixed-dim": "#a5c8ff",
+    "on-primary-fixed": "#001c3a",
+    "on-primary-fixed-variant": "#224876",
+    "inverse-primary": "#a5c8ff",
+    "secondary": "#545f71",
+    "secondary-dim": "#485364",
+    "on-secondary": "#ffffff",
+    "secondary-container": "#d8e3f8",
+    "on-secondary-container": "#3d4758",
+    "secondary-fixed": "#d8e3f8",
+    "secondary-fixed-dim": "#bcc7dc",
+    "on-secondary-fixed": "#111c2b",
+    "on-secondary-fixed-variant": "#3d4758",
+    "tertiary": "#7e5700",
+    "tertiary-dim": "#6f4c00",
+    "on-tertiary": "#ffffff",
+    "tertiary-container": "#ffdeac",
+    "on-tertiary-container": "#604100",
+    "tertiary-fixed": "#ffdeac",
+    "tertiary-fixed-dim": "#f3be65",
+    "on-tertiary-fixed": "#281900",
+    "on-tertiary-fixed-variant": "#604100",
+    "error": "#ba1a1a",
+    "error-dim": "#a80710",
+    "on-error": "#ffffff",
+    "error-container": "#ffdad6",
+    "on-error-container": "#93000a",
+    "surface-variant": "#d4e3ff",
+    "surface-tint": "#3c6090",
+    "shadow": "#000000",
+    "scrim": "#000000"
+  },
+  "palettes": {
+    "primary": [
+      [
+        0,
+        "#000000"
+      ],
+      [
+        10,
+        "#001c3a"
+      ],
+      [
+        20,
+        "#00315e"
+      ],
+      [
+        30,
+        "#224876"
+      ],
+      [
+        40,
+        "#3c6090"
+      ],
+      [
+        50,
+        "#5678aa"
+      ],
+      [
+        60,
+        "#7092c5"
+      ],
+      [
+        70,
+        "#8aade2"
+      ],
+      [
+        80,
+        "#a5c8ff"
+      ],
+      [
+        90,
+        "#d4e3ff"
+      ],
+      [
+        95,
+        "#ebf1ff"
+      ],
+      [
+        98,
+        "#f9f9ff"
+      ],
+      [
+        99,
+        "#fdfcff"
+      ],
+      [
+        100,
+        "#ffffff"
+      ]
+    ],
+    "tertiary": [
+      [
+        0,
+        "#000000"
+      ],
+      [
+        10,
+        "#281900"
+      ],
+      [
+        20,
+        "#432c00"
+      ],
+      [
+        30,
+        "#604100"
+      ],
+      [
+        40,
+        "#7e5700"
+      ],
+      [
+        50,
+        "#9b6f1d"
+      ],
+      [
+        60,
+        "#b78935"
+      ],
+      [
+        70,
+        "#d5a34d"
+      ],
+      [
+        80,
+        "#f3be65"
+      ],
+      [
+        90,
+        "#ffdeac"
+      ],
+      [
+        95,
+        "#ffeeda"
+      ],
+      [
+        98,
+        "#fff8f3"
+      ],
+      [
+        99,
+        "#fffbff"
+      ],
+      [
+        100,
+        "#ffffff"
+      ]
+    ],
+    "neutral": [
+      [
+        0,
+        "#000000"
+      ],
+      [
+        10,
+        "#111c2b"
+      ],
+      [
+        20,
+        "#273141"
+      ],
+      [
+        30,
+        "#3d4758"
+      ],
+      [
+        40,
+        "#545f71"
+      ],
+      [
+        50,
+        "#6d788a"
+      ],
+      [
+        60,
+        "#8791a4"
+      ],
+      [
+        70,
+        "#a1acc0"
+      ],
+      [
+        80,
+        "#bcc7dc"
+      ],
+      [
+        90,
+        "#d8e3f8"
+      ],
+      [
+        95,
+        "#ebf1ff"
+      ],
+      [
+        98,
+        "#f9f9ff"
+      ],
+      [
+        99,
+        "#fdfcff"
+      ],
+      [
+        100,
+        "#ffffff"
+      ]
+    ],
+    "neutralVariant": [
+      [
+        0,
+        "#000000"
+      ],
+      [
+        10,
+        "#0d1c30"
+      ],
+      [
+        20,
+        "#233146"
+      ],
+      [
+        30,
+        "#39475e"
+      ],
+      [
+        40,
+        "#515f76"
+      ],
+      [
+        50,
+        "#697890"
+      ],
+      [
+        60,
+        "#8391ab"
+      ],
+      [
+        70,
+        "#9dacc6"
+      ],
+      [
+        80,
+        "#b8c7e2"
+      ],
+      [
+        90,
+        "#d4e3ff"
+      ],
+      [
+        95,
+        "#ebf1ff"
+      ],
+      [
+        98,
+        "#f9f9ff"
+      ],
+      [
+        99,
+        "#fdfcff"
+      ],
+      [
+        100,
+        "#ffffff"
+      ]
+    ]
+  }
+}

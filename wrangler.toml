@@ -1,0 +1,15 @@
+# Cloudflare Pages configuration — https://developers.cloudflare.com/pages/
+# Build is produced by `npm run build` (outputs to dist/).
+name = "sharea-verify"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "dist"
+
+# The like counter needs ONE KV namespace:
+#   1. create it:  npx wrangler kv namespace create LIKES_KV
+#   2. paste the returned id below (and in the preview id if you want it for
+#      deploy previews too)
+#   3. deploy:     npx wrangler pages deploy
+[[kv_namespaces]]
+binding = "LIKES_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+# preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_NAMESPACE_ID"
