@@ -36,7 +36,7 @@ export function LogoLockup({
       <span className={cn("relative inline-grid shrink-0 place-items-center rounded-full", s.img)}>
         <img
           src={asset("portrait.jpg")}
-          alt="شعار شارع: الصورة الرمزية الرسمية لبوت شارع"
+          alt="شعار الشارع: الصورة الرمزية الرسمية لبوت الشارع"
           width={96}
           height={96}
           className="size-full rounded-full object-cover"

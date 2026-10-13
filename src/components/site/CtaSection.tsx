@@ -174,7 +174,7 @@ export function StickyCtaBar() {
         {/* Temporarily disabled like shortcut; kept here for rollback.
         <a
           href="#like"
-          aria-label="أضِف إعجاباً بصفحة شارع"
+          aria-label="أضِف إعجاباً بصفحة الشارع"
           className="state-layer relative inline-grid size-12 shrink-0 place-items-center rounded-full text-on-surface-variant outline-none focus-ring"
         >
           <Icon name="favorite" size={22} />

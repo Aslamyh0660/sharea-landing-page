@@ -27,27 +27,27 @@ export const TELEGRAM_HANDLE = "@Sharea_qombot"
 
 export const BRAND = {
   latin: "SHAREA",
-  arabic: "شارع",
+  arabic: "الشارع",
   slogan: "كُلُّ احتياجاتِكَ في مكانٍ واحد",
   tagline: "خدمات متكاملة للزوار العرب في قم",
 }
 
 export const HERO = {
   badge: "معتمد",
-  headline: "هذا المكان معتمد من بوت شارع",
+  headline: "هذا المكان معتمد من بوت الشارع",
   support:
-    "وجود رمز شارع الرسمي في هذا المكان يعني أنه من الأماكن المعتمدة لدينا",
+    "وجود رمز الشارع الرسمي في هذا المكان يعني أنه من الأماكن المعتمدة لدينا",
   reassurance: "استفد من خدمات هذا المكان براحة بال وثقة",
-  cta: "ادخل إلى بوت شارع",
+  cta: "ادخل إلى بوت الشارع",
 }
 
 export const SECTION_TITLES = {
-  services: "خدمات شارع",
+  services: "خدمات الشارع",
   servicesIntro: "سبع خدمات تحتاجها أثناء زيارتك لقم، كلها في بوت واحد",
-  trust: "لماذا شارع؟",
+  trust: "لماذا الشارع؟",
   // Temporarily disabled with the like section; kept for rollback:
-  // like: "هل أعجبتك صفحة شارع؟",
-  cta: "ابدأ الآن مع شارع",
+  // like: "هل أعجبتك صفحة الشارع؟",
+  cta: "ابدأ الآن مع الشارع",
   ctaIntro: "افتح البوت واطلب ما تحتاجه مباشرة، أو انضم إلى مجموعة الواتساب",
 }
 
@@ -110,7 +110,7 @@ export const TRUST_VALUES: TrustValue[] = [
 ]
 
 export const FOOTER = {
-  line: "جميع الخدمات في قم — شارع",
+  line: "جميع الخدمات في قم — الشارع",
 }
 
 /** localStorage keys */

@@ -71,7 +71,7 @@
 //           <Toggle
 //             className="like-toggle size-14 rounded-full"
 //             aria-pressed={state.liked}
-//             aria-label="أضِف إعجاباً بصفحة شارع"
+//             aria-label="أضِف إعجاباً بصفحة الشارع"
 //             disabled={busy || state.status !== "ready"}
 //             onClick={onToggle}
 //           >

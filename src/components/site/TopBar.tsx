@@ -42,7 +42,7 @@ export function TopBar() {
           href={TELEGRAM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="افتح بوت شارع على تيليغرام"
+          aria-label="افتح بوت الشارع على تيليغرام"
           className={cn(
             "state-layer relative inline-grid size-11 cursor-pointer place-items-center rounded-full",
             "text-on-surface-variant outline-none focus-ring"

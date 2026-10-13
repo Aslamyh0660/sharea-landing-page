@@ -1,7 +1,7 @@
 {
-  "name": "Sharea · شارع",
-  "short_name": "شارع",
-  "description": "خدمات متكاملة للزوار العرب في قم — بوت شارع على تيليغرام",
+  "name": "Sharea · الشارع",
+  "short_name": "الشارع",
+  "description": "خدمات متكاملة للزوار العرب في قم — بوت الشارع على تيليغرام",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#091423",
