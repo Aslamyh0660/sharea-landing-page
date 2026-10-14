@@ -58,12 +58,11 @@ Also in `src/config.ts`:
 
 ```ts
 export const TELEGRAM_URL = "https://t.me/Sharea_qombot"   // the bot (note: qombot with q)
-export const WHATSAPP_GROUP_LINK = "[WHATSAPP_GROUP_LINK]" // ⚠️ still a placeholder
+export const WHATSAPP_GROUP_LINK = "https://chat.whatsapp.com/…"
 ```
 
-Until the WhatsApp link is a real `https://chat.whatsapp.com/…` URL, the
-WhatsApp button renders as an honest **disabled** state with a "coming soon"
-note — it never looks clickable and never leads anywhere.
+The WhatsApp group button is an active link and uses the site's semantic green
+Material 3 color roles.
 
 ## Replacing the portrait
 
@@ -169,8 +168,6 @@ is configured; the page reports that state rather than inventing a count.
       print shop.
 - [ ] Point `og:image` / `twitter:image` in `index.html` at the absolute
       `https://<your-domain>/assets/og.png`.
-- [ ] Add the real WhatsApp invite URL in `src/config.ts` (the button
-      activates itself).
 - [ ] Optional: point a custom domain in the Pages dashboard.
 
 ## Project structure

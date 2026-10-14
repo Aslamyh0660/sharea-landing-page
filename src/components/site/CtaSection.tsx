@@ -10,7 +10,6 @@ import {
   TELEGRAM_URL,
   TELEGRAM_HANDLE,
   WHATSAPP_GROUP_LINK,
-  whatsappReady,
 } from "@/config"
 
 function CtaActions({ compact }: { compact?: boolean }) {
@@ -68,26 +67,15 @@ function CtaActions({ compact }: { compact?: boolean }) {
         {HERO.cta}
       </Button>
 
-      {whatsappReady ? (
-        <Button
-          render={<a href={WHATSAPP_GROUP_LINK} target="_blank" rel="noopener noreferrer" />}
-          variant="outlined"
-          size="md"
-        >
-          <Icon name="forum" size={20} />
-          انضم إلى مجموعة الواتساب
-        </Button>
-      ) : (
-        <span className="inline-flex flex-col items-center gap-1">
-          <Button variant="outlined" size="md" disabled aria-describedby="whatsapp-note">
-            <Icon name="forum" size={20} />
-            انضم إلى مجموعة الواتساب
-          </Button>
-          <span id="whatsapp-note" className="text-body-small text-on-surface-variant">
-            سيُضاف رابط المجموعة قريباً
-          </span>
-        </span>
-      )}
+      <Button
+        render={<a href={WHATSAPP_GROUP_LINK} target="_blank" rel="noopener noreferrer" />}
+        variant="filled"
+        size="md"
+        className="bg-[var(--sharea-success-container)] text-[var(--sharea-success-on-container)] hover:shadow-elevation-1"
+      >
+        <Icon name="forum" size={20} />
+        انضم إلى مجموعة الواتساب
+      </Button>
 
       <div className="flex items-center gap-1">
         {hasShare && (

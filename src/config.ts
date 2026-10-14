@@ -10,17 +10,9 @@ export const TELEGRAM_URL = "https://t.me/Sharea_qombot"
 
 /**
  * The WhatsApp group invite link.
- *
- * ⚠️ STILL A PLACEHOLDER: replace "[WHATSAPP_GROUP_LINK]" with the real
- * invite URL (https://chat.whatsapp.com/…). While it is a placeholder, the
- * WhatsApp button renders as an honest disabled state ("coming soon") — it
- * never looks clickable and never leads anywhere.
  */
-export const WHATSAPP_GROUP_LINK = "[WHATSAPP_GROUP_LINK]"
-
-export const whatsappReady =
-  WHATSAPP_GROUP_LINK.startsWith("https://") &&
-  !WHATSAPP_GROUP_LINK.includes(" ")
+export const WHATSAPP_GROUP_LINK =
+  "https://chat.whatsapp.com/HuPL6JguDzh8o083TfZedi?s=cl&p=i&ilr=4&iam=0"
 
 /** The bot handle — always "qombot" (with a q), never "gombot". */
 export const TELEGRAM_HANDLE = "@Sharea_qombot"
